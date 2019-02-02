@@ -55,11 +55,11 @@ class Data_loader():
         assert omniglot.min() == 0.0
 
         if train_mode:
-            self.images = omniglot[:1200, :20, :, :, :]
+            self.images = omniglot[:1200, :80, :, :, :]
             self.num_classes = self.images.shape[0]
             self.num_samples = self.images.shape[1]
         else:
-            self.images = omniglot[1200:, :20, :, :, :]
+            self.images = omniglot[1200:, :80, :, :, :]
             self.num_classes = self.images.shape[0]
             self.num_samples = self.images.shape[1]
 
