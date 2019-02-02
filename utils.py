@@ -59,7 +59,7 @@ class Data_loader():
             self.num_classes = self.images.shape[0]
             self.num_samples = self.images.shape[1]
         else:
-            self.images = omniglot[1200:, :80, :, :, :]
+            self.images = omniglot[1200:, 0:80:4, :, :, :]
             self.num_classes = self.images.shape[0]
             self.num_samples = self.images.shape[1]
 
